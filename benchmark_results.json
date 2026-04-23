@@ -1,0 +1,361 @@
+{
+  "meta": {
+    "generated_at": "2026-04-23T12:52:24.208977+00:00",
+    "model_name": "openai/gpt-oss-20b",
+    "dataset_path": "D:\\kurs\\maks_rag\\KP\\benchmark\\dataset.json",
+    "dataset_api_url": null,
+    "rag_endpoint": "http://localhost:8000/rag/ask",
+    "results_path": "benchmark_results.json",
+    "tests_total": 10,
+    "tests_completed": 10
+  },
+  "summary": {
+    "answer_metrics_avg": {
+      "BLEU": 0.4599,
+      "ROUGE-L_f1": 0.4915,
+      "Token_F1": 0.4956,
+      "Exact_Match": 0.1,
+      "Normalized_Exact_Match": 0.2,
+      "Answer_Length_Ratio": 1.7303
+    },
+    "retrieval_metrics_avg": {
+      "HitRate@k": 1.0,
+      "Precision@k": 0.265,
+      "Recall@k": 1.0,
+      "MRR": 0.395
+    },
+    "latency_ms": {
+      "mean_ms": 7466.34,
+      "min_ms": 3610.0,
+      "max_ms": 20953.94,
+      "p50_ms": 4394.85,
+      "p95_ms": 20953.94
+    }
+  },
+  "tests": [
+    {
+      "test_id": 1,
+      "query": "Сколько учебных дисциплин абитуриенты сдают при поступлении в магистратуру БГУИР?",
+      "expected": "При поступлении в магистратуру БГУИР абитуриенты сдают вступительное испытание по двум учебным дисциплинам специальности.",
+      "generated": "В предоставленном контексте конкретное число дисциплин, которые абитуриенты сдают при поступлении в магистратуру БГУИР, не указано. В таблице перечислены «Дисциплины вступительного испытания», но их количество не уточняется. Поэтому точный ответ на вопрос «Сколько учебных дисциплин абитуриенты сдают при поступлении в магистратуру БГУИР?» отсутствует в данном источнике.",
+      "retrieved_sources": [
+        "www.bsuir.by_ru_aspirantura-doctorantura_dlya-postupayuschikh.md",
+        "www.bsuir.by_ru_fik_magistratura.md",
+        "abitur.bsuir.by_ii-stupen-vysshego-obrazovaniya-magistratura.md",
+        "abitur.bsuir.by_vtoroe-vysshee-obrazovanie.md",
+        "abitur.bsuir.by_sokraschennaya-forma-obucheniya.md"
+      ],
+      "relevant_sources": [
+        "abitur.bsuir.by_ii-stupen-vysshego-obrazovaniya-magistratura.md"
+      ],
+      "latency_ms": 20953.94,
+      "answer_metrics": {
+        "BLEU": 0.1304,
+        "ROUGE-L_f1": 0.2,
+        "Token_F1": 0.2,
+        "Exact_Match": 0.0,
+        "Normalized_Exact_Match": 0.0,
+        "Answer_Length_Ratio": 3.2857,
+        "Semantic_Similarity": null
+      },
+      "retrieval_metrics": {
+        "HitRate@k": 1.0,
+        "Precision@k": 0.2,
+        "Recall@k": 1.0,
+        "MRR": 0.3333
+      },
+      "status": "ok"
+    },
+    {
+      "test_id": 2,
+      "query": "Сколько учебно-научных лабораторий создано в БГУИР совместно с предприятиями и IT-компаниями?",
+      "expected": "В БГУИР создано 45 учебно-научных лабораторий совместно с промышленными предприятиями и IT-компаниями.",
+      "generated": "В БГУИР совместно с предприятиями и IT‑компаниями создано **45 учебно‑научных лабораторий**. Эти лаборатории позволяют студентам проводить практические занятия и исследовательские работы в реальных условиях производства, а также разрабатывать курсовые и дипломные проекты по актуальным темам отрасли.",
+      "retrieved_sources": [
+        "www.bsuir.by_ru_fksis.md",
+        "www.bsuir.by_ru_bguir-eto.md",
+        "www.bsuir.by_ru_fkp.md",
+        "www.bsuir.by_ru_obrazovanie.md",
+        "bsuir.by_ru_obrazovanie.md"
+      ],
+      "relevant_sources": [
+        "bsuir.by_ru_obrazovanie.md"
+      ],
+      "latency_ms": 4312.26,
+      "answer_metrics": {
+        "BLEU": 0.1944,
+        "ROUGE-L_f1": 0.25,
+        "Token_F1": 0.2917,
+        "Exact_Match": 0.0,
+        "Normalized_Exact_Match": 0.0,
+        "Answer_Length_Ratio": 3.0,
+        "Semantic_Similarity": null
+      },
+      "retrieval_metrics": {
+        "HitRate@k": 1.0,
+        "Precision@k": 0.25,
+        "Recall@k": 1.0,
+        "MRR": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "test_id": 3,
+      "query": "Сколько филиалов кафедр БГУИР создано на ведущих предприятиях страны?",
+      "expected": "На ведущих предприятиях страны создано 9 филиалов кафедр БГУИР.",
+      "generated": "На ведущих предприятиях страны создано 9 филиалов кафедр БГУИР.",
+      "retrieved_sources": [
+        "www.bsuir.by_ru_bguir-eto.md",
+        "www.bsuir.by_ru_fik.md",
+        "www.bsuir.by_ru_fkp.md",
+        "www.bsuir.by_ru_obrazovanie.md",
+        "bsuir.by_ru_obrazovanie.md"
+      ],
+      "relevant_sources": [
+        "bsuir.by_ru_obrazovanie.md"
+      ],
+      "latency_ms": 4394.85,
+      "answer_metrics": {
+        "BLEU": 1.0,
+        "ROUGE-L_f1": 1.0,
+        "Token_F1": 1.0,
+        "Exact_Match": 1.0,
+        "Normalized_Exact_Match": 1.0,
+        "Answer_Length_Ratio": 1.0,
+        "Semantic_Similarity": null
+      },
+      "retrieval_metrics": {
+        "HitRate@k": 1.0,
+        "Precision@k": 0.25,
+        "Recall@k": 1.0,
+        "MRR": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "test_id": 4,
+      "query": "Какой адрес указан у сотрудника пресс-службы Коваленко Елены Сергеевны?",
+      "expected": "Для Коваленко Елены Сергеевны указан адрес: ул. Платонова, 39, каб. 201.",
+      "generated": "Информация о конкретном адресе сотрудника пресс‑службы Коваленко Елены Сергеевны в предоставленном контексте отсутствует.",
+      "retrieved_sources": [
+        "bsuir.by_ru_molodyozhnaya-politika-i-vospitanie.md",
+        "bsuir.by_ru_kontakty-press-sluzhba.md",
+        "www.bsuir.by_ru_press-sluzhba.md",
+        "www.bsuir.by_ru_kontakty-press-sluzhba.md",
+        "bsuir.by_ru_programmy-mobilnosti_oformlenie-komandirovki.md"
+      ],
+      "relevant_sources": [
+        "bsuir.by_ru_kontakty-press-sluzhba.md"
+      ],
+      "latency_ms": 5226.57,
+      "answer_metrics": {
+        "BLEU": 0.2308,
+        "ROUGE-L_f1": 0.25,
+        "Token_F1": 0.25,
+        "Exact_Match": 0.0,
+        "Normalized_Exact_Match": 0.0,
+        "Answer_Length_Ratio": 1.1818,
+        "Semantic_Similarity": null
+      },
+      "retrieval_metrics": {
+        "HitRate@k": 1.0,
+        "Precision@k": 0.25,
+        "Recall@k": 1.0,
+        "MRR": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "test_id": 5,
+      "query": "Как сформулирована миссия БГУИР?",
+      "expected": "Миссия БГУИР — подготовка специалистов с высшим образованием и кадров высшей научной квалификации, способных воспринимать, генерировать и воплощать инновационные идеи, создавать конкурентоспособную наукоемкую продукцию в области информатики и электроники.",
+      "generated": "Миссия Белорусского государственного университета информатики и радиоэлектроники сформулирована так: университет готовит специалистов с высшим образованием и высшей научной квалификацией, которые способны воспринимать, генерировать и воплощать инновационные идеи, а также создавать конкурентоспособную наукоемкую продукцию в области информатики и электроники.",
+      "retrieved_sources": [
+        "bsuir.by_ru_kontakty-press-sluzhba.md",
+        "bsuir.by_ru_ob-universitete.md",
+        "www.bsuir.by_ru_smk.md",
+        "www.bsuir.by_ru_kontakty-press-sluzhba.md",
+        "www.bsuir.by_ru_nravstvennyy-kodeks-bguir.md"
+      ],
+      "relevant_sources": [
+        "bsuir.by_ru_ob-universitete.md"
+      ],
+      "latency_ms": 3974.96,
+      "answer_metrics": {
+        "BLEU": 0.6053,
+        "ROUGE-L_f1": 0.6866,
+        "Token_F1": 0.6866,
+        "Exact_Match": 0.0,
+        "Normalized_Exact_Match": 0.0,
+        "Answer_Length_Ratio": 1.3103,
+        "Semantic_Similarity": null
+      },
+      "retrieval_metrics": {
+        "HitRate@k": 1.0,
+        "Precision@k": 0.25,
+        "Recall@k": 1.0,
+        "MRR": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "test_id": 6,
+      "query": "В какие даты пройдет AI HACKATHON: BSUIR 2026?",
+      "expected": "Хакатон AI HACKATHON: BSUIR 2026 пройдет 19-20 марта 2026 года.",
+      "generated": "AI HACKATHON: BSUIR 2026 будет проходить 19 и 20 марта 2026 года.",
+      "retrieved_sources": [
+        "cybersecurity-day.bsuir.by_registration.md",
+        "bsuir.by_ru_news_114870-priglashaem-prinyat-uchastie-v-turnire-po-kiberbezopasnosti-bsuir-cybersecurity-day-.md",
+        "www.bsuir.by_ru_fotogalereya_2026.md",
+        "bsuir.by_ru_fotogalereya_2026.md",
+        "bsuir.by_ru_news_114700-priglashaem-prinyat-uchastie-v-khakatone-ai-hackathon--bsuir-2026-.md"
+      ],
+      "relevant_sources": [
+        "bsuir.by_ru_news_114700-priglashaem-prinyat-uchastie-v-khakatone-ai-hackathon--bsuir-2026-.md"
+      ],
+      "latency_ms": 3763.23,
+      "answer_metrics": {
+        "BLEU": 0.5833,
+        "ROUGE-L_f1": 0.6364,
+        "Token_F1": 0.6364,
+        "Exact_Match": 0.0,
+        "Normalized_Exact_Match": 0.0,
+        "Answer_Length_Ratio": 1.2,
+        "Semantic_Similarity": null
+      },
+      "retrieval_metrics": {
+        "HitRate@k": 1.0,
+        "Precision@k": 0.25,
+        "Recall@k": 1.0,
+        "MRR": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "test_id": 7,
+      "query": "До какой даты открыта регистрация команд на AI HACKATHON: BSUIR 2026?",
+      "expected": "Регистрация команд на AI HACKATHON: BSUIR 2026 открыта до 16 марта 2026 года.",
+      "generated": "Регистрация команд на AI HACKATHON: BSUIR 2026 открыта до 16 марта 2026 года.",
+      "retrieved_sources": [
+        "www.bsuir.by.md",
+        "bsuir.by_ru_news_114870-priglashaem-prinyat-uchastie-v-turnire-po-kiberbezopasnosti-bsuir-cybersecurity-day-.md",
+        "bsuir.by_kalendar-sobytiy.md",
+        "bsuir.by.md",
+        "bsuir.by_ru_news_114700-priglashaem-prinyat-uchastie-v-khakatone-ai-hackathon--bsuir-2026-.md"
+      ],
+      "relevant_sources": [
+        "bsuir.by_ru_news_114700-priglashaem-prinyat-uchastie-v-khakatone-ai-hackathon--bsuir-2026-.md"
+      ],
+      "latency_ms": 7978.07,
+      "answer_metrics": {
+        "BLEU": 1.0,
+        "ROUGE-L_f1": 1.0,
+        "Token_F1": 1.0,
+        "Exact_Match": 0.0,
+        "Normalized_Exact_Match": 1.0,
+        "Answer_Length_Ratio": 1.0,
+        "Semantic_Similarity": null
+      },
+      "retrieval_metrics": {
+        "HitRate@k": 1.0,
+        "Precision@k": 0.2,
+        "Recall@k": 1.0,
+        "MRR": 0.2
+      },
+      "status": "ok"
+    },
+    {
+      "test_id": 8,
+      "query": "Какой номер приказа и дата указаны для проведения 62-й научной конференции БГУИР?",
+      "expected": "Для 62-й научной конференции БГУИР указан приказ №108 от 26.02.2026.",
+      "generated": "Приказ №108 от 26 февраля 2026 года.",
+      "retrieved_sources": [
+        "www.bsuir.by_ru_sektor-studencheskoy-nauki_nauchnaya-konferentsiya-bguir.md",
+        "impuls.bsuir.by.md",
+        "www.bsuir.by_ru_fik_obyavleniya.md"
+      ],
+      "relevant_sources": [
+        "www.bsuir.by_ru_sektor-studencheskoy-nauki_nauchnaya-konferentsiya-bguir.md"
+      ],
+      "latency_ms": 6593.64,
+      "answer_metrics": {
+        "BLEU": 0.4286,
+        "ROUGE-L_f1": 0.3529,
+        "Token_F1": 0.3529,
+        "Exact_Match": 0.0,
+        "Normalized_Exact_Match": 0.0,
+        "Answer_Length_Ratio": 0.7,
+        "Semantic_Similarity": null
+      },
+      "retrieval_metrics": {
+        "HitRate@k": 1.0,
+        "Precision@k": 0.3333,
+        "Recall@k": 1.0,
+        "MRR": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "test_id": 9,
+      "query": "Когда вышел приказ о проведении внутреннего аудита №131 в документации СМК БГУИР?",
+      "expected": "Приказ о проведении внутреннего аудита №131 вышел 09.03.2025.",
+      "generated": "Приказ о проведении внутреннего аудита № 131 был издан 9 марта 2025 года.",
+      "retrieved_sources": [
+        "bsuir.by_ru_odno-okno.md",
+        "www.bsuir.by_ru_sektor-studencheskoy-nauki_nauchnaya-konferentsiya-bguir.md",
+        "bsuir.by_ru_smk_smk-prikazy.md"
+      ],
+      "relevant_sources": [
+        "bsuir.by_ru_smk_smk-prikazy.md"
+      ],
+      "latency_ms": 3610.0,
+      "answer_metrics": {
+        "BLEU": 0.3846,
+        "ROUGE-L_f1": 0.4762,
+        "Token_F1": 0.4762,
+        "Exact_Match": 0.0,
+        "Normalized_Exact_Match": 0.0,
+        "Answer_Length_Ratio": 1.625,
+        "Semantic_Similarity": null
+      },
+      "retrieval_metrics": {
+        "HitRate@k": 1.0,
+        "Precision@k": 0.3333,
+        "Recall@k": 1.0,
+        "MRR": 0.3333
+      },
+      "status": "ok"
+    },
+    {
+      "test_id": 10,
+      "query": "Как называется ДП 3.1 в документах СМК и когда она обновлена?",
+      "expected": "ДП 3.1 — «Прием в университет», обновлено 09.12.2025.",
+      "generated": "В предоставленном контексте информация о документе «ДП 3.1» в системе менеджмента качества (СМК) отсутствует, поэтому я не могу назвать его название и дату обновления.",
+      "retrieved_sources": [
+        "abitur.bsuir.by_zaochnaya-forma-obucheniya.md",
+        "impuls.bsuir.by.md",
+        "bsuir.by_ru_smk_smk-dokumenty-2-go-i-3-go-urovnya.md"
+      ],
+      "relevant_sources": [
+        "bsuir.by_ru_smk_smk-dokumenty-2-go-i-3-go-urovnya.md"
+      ],
+      "latency_ms": 13855.86,
+      "answer_metrics": {
+        "BLEU": 0.0417,
+        "ROUGE-L_f1": 0.0625,
+        "Token_F1": 0.0625,
+        "Exact_Match": 0.0,
+        "Normalized_Exact_Match": 0.0,
+        "Answer_Length_Ratio": 3.0,
+        "Semantic_Similarity": null
+      },
+      "retrieval_metrics": {
+        "HitRate@k": 1.0,
+        "Precision@k": 0.3333,
+        "Recall@k": 1.0,
+        "MRR": 0.3333
+      },
+      "status": "ok"
+    }
+  ]
+}

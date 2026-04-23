@@ -1,0 +1,27 @@
+services:
+  benchmark-service:
+    build: .
+    environment:
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY:-}
+      - MODEL_NAME=${MODEL_NAME:-openai/gpt-oss-20b}
+      - BASE_URL=${BASE_URL:-https://openrouter.ai/api/v1}
+    init: true
+    working_dir: /app
+    volumes:
+      - ./output:/app/output
+    ports:
+      - "8080:8080"
+    command: uvicorn service:app --host 0.0.0.0 --port 8080
+
+  benchmark-job:
+    build: .
+    profiles: ["job"]
+    environment:
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY:-}
+      - MODEL_NAME=${MODEL_NAME:-openai/gpt-oss-20b}
+      - BASE_URL=${BASE_URL:-https://openrouter.ai/api/v1}
+    init: true
+    working_dir: /app
+    volumes:
+      - ./output:/app/output
+    command: ${BENCHMARK_COMMAND:-python benchmark.py --dataset dataset.json --results-path output/benchmark_results.json}

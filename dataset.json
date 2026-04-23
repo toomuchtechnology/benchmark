@@ -1,0 +1,52 @@
+[
+    {
+        "query": "Сколько учебных дисциплин абитуриенты сдают при поступлении в магистратуру БГУИР?",
+        "expected": "При поступлении в магистратуру БГУИР абитуриенты сдают вступительное испытание по двум учебным дисциплинам специальности.",
+        "relevant_sources": ["abitur.bsuir.by_ii-stupen-vysshego-obrazovaniya-magistratura.md"]
+    },
+    {
+        "query": "Сколько учебно-научных лабораторий создано в БГУИР совместно с предприятиями и IT-компаниями?",
+        "expected": "В БГУИР создано 45 учебно-научных лабораторий совместно с промышленными предприятиями и IT-компаниями.",
+        "relevant_sources": ["bsuir.by_ru_obrazovanie.md"]
+    },
+    {
+        "query": "Сколько филиалов кафедр БГУИР создано на ведущих предприятиях страны?",
+        "expected": "На ведущих предприятиях страны создано 9 филиалов кафедр БГУИР.",
+        "relevant_sources": ["bsuir.by_ru_obrazovanie.md"]
+    },
+    {
+        "query": "Какой адрес указан у сотрудника пресс-службы Коваленко Елены Сергеевны?",
+        "expected": "Для Коваленко Елены Сергеевны указан адрес: ул. Платонова, 39, каб. 201.",
+        "relevant_sources": ["bsuir.by_ru_kontakty-press-sluzhba.md"]
+    },
+    {
+        "query": "Как сформулирована миссия БГУИР?",
+        "expected": "Миссия БГУИР — подготовка специалистов с высшим образованием и кадров высшей научной квалификации, способных воспринимать, генерировать и воплощать инновационные идеи, создавать конкурентоспособную наукоемкую продукцию в области информатики и электроники.",
+        "relevant_sources": ["bsuir.by_ru_ob-universitete.md"]
+    },
+    {
+        "query": "В какие даты пройдет AI HACKATHON: BSUIR 2026?",
+        "expected": "Хакатон AI HACKATHON: BSUIR 2026 пройдет 19-20 марта 2026 года.",
+        "relevant_sources": ["bsuir.by_ru_news_114700-priglashaem-prinyat-uchastie-v-khakatone-ai-hackathon--bsuir-2026-.md"]
+    },
+    {
+        "query": "До какой даты открыта регистрация команд на AI HACKATHON: BSUIR 2026?",
+        "expected": "Регистрация команд на AI HACKATHON: BSUIR 2026 открыта до 16 марта 2026 года.",
+        "relevant_sources": ["bsuir.by_ru_news_114700-priglashaem-prinyat-uchastie-v-khakatone-ai-hackathon--bsuir-2026-.md"]
+    },
+    {
+        "query": "Какой номер приказа и дата указаны для проведения 62-й научной конференции БГУИР?",
+        "expected": "Для 62-й научной конференции БГУИР указан приказ №108 от 26.02.2026.",
+        "relevant_sources": ["www.bsuir.by_ru_sektor-studencheskoy-nauki_nauchnaya-konferentsiya-bguir.md"]
+    },
+    {
+        "query": "Когда вышел приказ о проведении внутреннего аудита №131 в документации СМК БГУИР?",
+        "expected": "Приказ о проведении внутреннего аудита №131 вышел 09.03.2025.",
+        "relevant_sources": ["bsuir.by_ru_smk_smk-prikazy.md"]
+    },
+    {
+        "query": "Как называется ДП 3.1 в документах СМК и когда она обновлена?",
+        "expected": "ДП 3.1 — «Прием в университет», обновлено 09.12.2025.",
+        "relevant_sources": ["bsuir.by_ru_smk_smk-dokumenty-2-go-i-3-go-urovnya.md"]
+    }
+]
